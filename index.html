@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <span class="border border-primary">
+
+
+
+        <div class="container w-25 bg-dark p-3">
+            <h6 style="color:white ;">CALCULATOR</h6>
+            <div class="input-group mb-3">
+                
+                <input type="text" id="result" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mt-2 ms-1">
+              <div class="col"><button id="add" onclick="displayNum('+')" type="button" class="btn btn-secondary">+</button></div>
+              <div class="col"><button id="substraction" onclick="displayNum('-')" type="button" class="btn btn-secondary">-</button></div>
+              <div class="col"><button id="multiplication"  onclick="displayNum('*')" type="button" class="btn btn-secondary">*</button></div>
+              <div class="col"><button onid="division" onclick="displayNum('/')" type="button" class="btn btn-secondary">/  </button></div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mt-2 ms-1">
+                <div class="col"><button id="seven" onclick="displayNum(7)" type="button" class="btn btn-secondary">7</button></div>
+                <div class="col"><button id="eight" onclick="displayNum(8)" type="button" class="btn btn-secondary">8</button></div>
+                <div class="col"><button id="nine" onclick="displayNum(9)" type="button" class="btn btn-secondary">9</button></div>
+                <div class="col"><button onclick="displayNum('%')" type="button" class="btn btn-secondary">%</button></div>
+              </div>
+
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mt-2 ms-1">
+                <div class="col"><button id="four" onclick="displayNum(4)" type="button " class="btn btn-secondary">4</button></div>
+                <div class="col"><button id="five" onclick="displayNum(5)" type="button" class="btn btn-secondary">5</button></div>
+                <div class="col"><button id="six" onclick="displayNum(6)" type="button" class="btn btn-secondary">6</button></div>
+                <div class="col"><button id="ac" onclick="clearBox()" type="button" class="btn btn-danger">AC</button></div>
+              </div>
+
+
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mt-2 ms-1">
+                <div class="col"><button id="one" onclick="displayNum(1)" type="button" class="btn btn-secondary">1</button></div>
+                <div class="col"><button id="two" onclick="displayNum(2)" type="button" class="btn btn-secondary">2</button></div>
+                <div class="col"><button id="three" onclick="displayNum(3)" type="button" class="btn btn-secondary">3</button></div>
+                <div class="col "><button id="clear" onclick="removeItem()" type="button" class="btn n btn-primary">&#9003</button></div>
+                
+              </div>
+
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mt-2 ms-1">
+                <div class="col"><button id="" onclick="displayNum('.')" type="button" class="btn btn-secondary">.</button></div>
+                <div class="col"><button onclick="displayNum()" type="button" class="btn btn-secondary">(</button></div>
+                <div class="col"><button onclick="displayNum()"type="button" class="btn btn-secondary">)</button></div>
+                <div class="col "><button onclick="evaluateExpr()"type="button" class="btn n btn-primary">=</button></div>
+              </div>
+          </div>
+
+          
+    </span>
+
+
+    
+</body>
+
+<!-- link js file -->
+<script src="./calculator.js"></script>
+
+
+</html>  
